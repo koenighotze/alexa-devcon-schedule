@@ -44,7 +44,7 @@ const handlers = {
             .then( talks => {
                 const output = talks.map(talk => BuildOutput.talkToSpeech(talk))
                      .join();
-                self.emit(':tellWithCard', "<p>Auf der Devcon werden folgenden Vorträge stattfinden.</p>" + output + " <p>Viel Spass auf der Konferenz</p>");
+                self.emit(':tellWithCard', "<p>Auf der Devcon werden die folgenden Vorträge stattfinden.</p>" + output + " <p>Viel Spass auf der Konferenz</p>");
 
             })
             .catch( error => {

@@ -15,7 +15,7 @@
             "speakers": [
                 "Philipp Koch"
             ],
-            "title": "How ERGO setup an enterprise ready multi cloud setup with Kubernetis in AWS",
+            "title": "How ERGO setup an enterprise ready multi cloud setup with Kubernetes in AWS",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta sunt, unde repellendus amet dolor veniam illum sit reprehenderit pariatur libero dolore placeat alias, delectus sed atque magni accusamus vel.",
             "startsAt": "2017-11-10T10:00:00.000Z",
             "endsAt": "2017-11-10T10:45:00.000Z"
@@ -75,7 +75,7 @@
             "speakers": [
                 "Jürgen Schiewe"
             ],
-            "title": "Messaging minus Middleware – Multicast macht‘s möglich",
+            "title": "Messaging minus Middleware – Multicast macht es möglich",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta sunt, unde repellendus amet dolor veniam illum sit reprehenderit pariatur libero dolore placeat alias, delectus sed atque magni accusamus vel.",
             "startsAt": "2017-11-10T15:30:00.000Z",
             "endsAt": "2017-11-10T16:15:00.000Z"
@@ -88,8 +88,8 @@
             ],
             "title": "B2B Process Management über die Bitcoin Blockchain",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta sunt, unde repellendus amet dolor veniam illum sit reprehenderit pariatur libero dolore placeat alias, delectus sed atque magni accusamus vel.",
-            "startsAt": "2017-11-10T13:40:00.000Z",
-            "endsAt": "2017-11-10T14:00:00.000Z"
+            "startsAt": "2017-11-10T16:30:00.000Z",
+            "endsAt": "2017-11-10T17:15:00.000Z"
         }
 
 

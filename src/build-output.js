@@ -1,10 +1,10 @@
 const buildSpeechOutput = function (translation, talk) {
-    const output = talkToSpeech(talk) + " Viel Spass beim Vortrag!";
+    const output = talkToSpeech(talk) + " <p>Viel Spass beim Vortrag!</p>";
     return output;
 };
 
 const talkToSpeech = function (talk) {
-    return "<p>Um " + dateToTimeSpeech(Date.parse(talk.startsAt)) + ": " + talk.speakers.join(' und ') + " mit '" + talk.title + "'</p>";
+    return "<p>Um " + dateToTimeSpeech(Date.parse(talk.startsAt)) + ": " + talk.speakers.join(' und ') + " mit " + talk.title + "</p>";
 };
 
 const dateToTimeSpeech = function (millis) {
