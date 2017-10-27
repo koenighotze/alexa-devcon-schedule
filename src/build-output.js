@@ -1,18 +1,15 @@
 const buildSpeechOutput = function (translation, talk) {
-    console.log('Building speech output for', talk);
-
-    const confDate = new Date();
-    // confDate.setTime(nextTalks[0].fromTimeMillis);
-
-    const output = "<p>Um " + dateToTimeSpeech(Date.parse(talk.startsAt)) + ": " + talk.speakers.join(' und ') + " mit '" + talk.title + "'</p> Viel Spass beim Vortrag!";
+    const output = talkToSpeech(talk) + " Viel Spass beim Vortrag!";
     return output;
 };
 
+const talkToSpeech = function (talk) {
+    return "<p>Um " + dateToTimeSpeech(Date.parse(talk.startsAt)) + ": " + talk.speakers.join(' und ') + " mit '" + talk.title + "'</p>";
+};
+
 const dateToTimeSpeech = function (millis) {
-    console.log("datetotime", millis);
     const date = new Date();
     date.setTime(millis);
-    console.log("datetotime", date);
     const [hour, minutes] = [ date.getHours(), pad(date.getMinutes(), 2)];
     return "<say-as interpret-as='time'>" + hour + ":" + minutes + "</say-as>";
 
@@ -31,5 +28,6 @@ const dateToSpeech = function (date) {
 
 module.exports = {
     buildSpeechOutput,
-    dateToSpeech
+    dateToSpeech,
+    talkToSpeech
 };

@@ -19,18 +19,33 @@ const languageStrings = {
     }
 };
 
+const schedule = require('./s3-schedule').schedule;
+
 const handlers = {
     'LaunchRequest': function () {
-        this.emit('GetNextTalk');
+        this.emit(':tellWithCard', "Willkommen beim Devcon Konferenzhelfer");
     },
     'GetNextTalk': function () {
         const now = new Date();
         const self = this;
-        DevconSchedule.getNextTalk(now)
+        DevconSchedule.getNextTalk(now, schedule)
             .then( talk => {
-                console.log('Got', talk);
                 const output = BuildOutput.buildSpeechOutput(self.t, talk);
                 self.emit(':tellWithCard', output);
+            })
+            .catch( error => {
+                console.log('Cannot fetch', error);
+                self.emit(':tellWithCard', self.t('CANNOT_FETCH'));
+            });
+    },
+    'GetSchedule': function () {
+        const self = this;
+        schedule
+            .then( talks => {
+                const output = talks.map(talk => BuildOutput.talkToSpeech(talk))
+                     .join();
+                self.emit(':tellWithCard', "<p>Auf der Devcon werden folgenden Vorträge stattfinden.</p>" + output + " <p>Viel Spass auf der Konferenz</p>");
+
             })
             .catch( error => {
                 console.log('Cannot fetch', error);
