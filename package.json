@@ -17,7 +17,9 @@
     "update.lambda": "npm run package && aws lambda update-function-code --function-name devconSchedule --region eu-west-1 --zip-file fileb://build/skill.zip",
     "invoke.getnexttalk.remote": "aws lambda invoke --function-name devconSchedule --region eu-west-1 --payload file://test/getnexttalkevent.json out.json",
     "invoke.getschedule.remote": "aws lambda invoke --function-name devconSchedule --region eu-west-1 --payload file://test/getscheduleevent.json out.json",
-    "invoke.local": "npm run prepare.package &&  cp sam/* build/tmp && cd build/tmp && sam local invoke --template template.yaml -e ../../test/getnexttalkevent.json devconSchedule",
+    "invoke.getnexttalk.local": "npm run prepare.package &&  cp sam/* build/tmp && cd build/tmp && sam local invoke --template template.yaml -e ../../test/getnexttalkevent.json devconSchedule",
+    "invoke.getschedule.local": "npm run prepare.package &&  cp sam/* build/tmp && cd build/tmp && sam local invoke --template template.yaml -e ../../test/getscheduleevent.json devconSchedule",
+    "invoke.launch.local": "npm run prepare.package &&  cp sam/* build/tmp && cd build/tmp && sam local invoke --template template.yaml -e ../../test/launchevent.json devconSchedule",
     "deploy": "npm test && npm run clean && npm run package && npm run update.lambda && npm run invoke.remote",
     "upload.schedule": "aws s3 cp --acl public-read s3/schedule.json s3://dschmitz/devcon/schedule/",
     "log": "awslogs get /aws/lambda/devconSchedule"

@@ -23,7 +23,7 @@ const schedule = require('./s3-schedule').schedule;
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit(':tellWithCard', "Willkommen beim Devcon Konferenzhelfer");
+        this.emit(':tellWithCard', "Willkommen beim Senacor Devcon Konferenzhelfer. " + this.t('HELP_MESSAGE'));
     },
     'GetNextTalk': function () {
         const now = new Date();
