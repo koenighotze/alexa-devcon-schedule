@@ -29,15 +29,4 @@ lab.experiment('the schedule', () => {
         return talk.then(t => expect(t).to.be.undefined);
     });
 
-    lab.test('should ', (done) => {
-        done();
-    });
-
-    lab.test('should ', (done) => {
-        done();
-    });
-
-    lab.test('should ', (done) => {
-        done();
-    });
 });

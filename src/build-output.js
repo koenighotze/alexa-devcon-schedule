@@ -1,6 +1,5 @@
-const buildSpeechOutput = function (translation, talk) {
-    const output = talkToSpeech(talk) + " <p>Viel Spass beim Vortrag!</p>";
-    return output;
+const nextTalkToSpeech = function (talk) {
+    return talkToSpeech(talk) + " <p>Viel Spass beim Vortrag!</p>";
 };
 
 const talkToSpeech = function (talk) {
@@ -10,24 +9,27 @@ const talkToSpeech = function (talk) {
 const dateToTimeSpeech = function (millis) {
     const date = new Date();
     date.setTime(millis);
-    const [hour, minutes] = [ date.getHours(), pad(date.getMinutes(), 2)];
-    return "<say-as interpret-as='time'>" + hour + ":" + minutes + "</say-as>";
-
+    const [hour, minutes] = [ date.getHours(), date.getMinutes()];
+    return "<say-as interpret-as='time'>" + hour + ":" + (minutes < 10 ? "0" : "") + minutes + "</say-as>";
 };
-
-function pad(num, size) {
-    var s = num+"";
-    while (s.length < size) s = "0" + s;
-    return s;
-}
 
 const dateToSpeech = function (date) {
     const [day, month] = [ date.getDate(), date.getMonth() + 1];
     return "<say-as interpret-as='date' format='dm'>" + day + "." + month + ".</say-as>";
 };
 
+const scheduleToSpeech = function (schedule) {
+    const output = schedule.map(talk => talkToSpeech(talk))
+                     .join();
+    return "<p>Auf der Devcon werden die folgenden Vorträge stattfinden.</p>" +
+            output +
+            " <p>Viel Spass auf der Konferenz</p>";
+};
+
 module.exports = {
-    buildSpeechOutput,
     dateToSpeech,
-    talkToSpeech
+    talkToSpeech,
+    scheduleToSpeech,
+    nextTalkToSpeech,
+    dateToTimeSpeech
 };

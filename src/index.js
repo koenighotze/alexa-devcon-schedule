@@ -30,7 +30,7 @@ const handlers = {
         const self = this;
         DevconSchedule.getNextTalk(now, schedule)
             .then( talk => {
-                const output = BuildOutput.buildSpeechOutput(self.t, talk);
+                const output = BuildOutput.nextTalkToSpeech(talk);
                 self.emit(':tellWithCard', output);
             })
             .catch( error => {
@@ -42,9 +42,8 @@ const handlers = {
         const self = this;
         schedule
             .then( talks => {
-                const output = talks.map(talk => BuildOutput.talkToSpeech(talk))
-                     .join();
-                self.emit(':tellWithCard', "<p>Auf der Devcon werden die folgenden Vorträge stattfinden.</p>" + output + " <p>Viel Spass auf der Konferenz</p>");
+                const output = BuildOutput.scheduleToSpeech(talks);
+                self.emit(':tellWithCard', output);
 
             })
             .catch( error => {
