@@ -1,5 +1,5 @@
 const nextTalkToSpeech = function (talk) {
-    return talkToSpeech(talk) + " <p>Viel Spass beim Vortrag!</p>";
+    return talkToSpeech(talk) + "<p>" + talk.summary + "</p>" + " <p>Viel Spass beim Vortrag!</p>";
 };
 
 const talkToSpeech = function (talk) {

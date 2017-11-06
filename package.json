@@ -22,7 +22,13 @@
     "invoke.launch.local": "npm run prepare.package &&  cp sam/* build/tmp && cd build/tmp && sam local invoke --template template.yaml -e ../../test/launchevent.json devconSchedule",
     "deploy": "npm test && npm run clean && npm run package && npm run update.lambda && npm run invoke.remote",
     "upload.schedule": "aws s3 cp --acl public-read s3/schedule.json s3://dschmitz/devcon/schedule/",
-    "log": "awslogs get /aws/lambda/devconSchedule"
+    "log": "awslogs get /aws/lambda/devconSchedule",
+    "create.api.lambda": "npm run package && aws lambda create-function --function-name DevconScheduleApi --runtime nodejs6.10 --region eu-west-1 --role arn:aws:iam::604370441254:role/basic-lambda-logging-permissions --handler schedule.handler --zip-file fileb://build/skill.zip",
+    "update.api.lambda": "npm run package && aws lambda update-function-code --function-name DevconScheduleApi --region eu-west-1 --zip-file fileb://build/skill.zip",
+    "delete.api.lambda": "",
+    "invoke.api.lambda": "aws lambda invoke --function-name DevconScheduleApi --region eu-west-1 out.json",
+    "api.log": "awslogs get /aws/lambda/DevconScheduleApi"
+
   },
   "dependencies": {
     "alexa-sdk": "^1.0.15"

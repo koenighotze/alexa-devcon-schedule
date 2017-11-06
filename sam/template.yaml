@@ -10,3 +10,10 @@ Resources:
       Runtime: nodejs6.10
       Handler: index.handler
       CodeUri: .
+  # scheduleApi:
+  #   Type: AWS::Serverless::Function
+  #   Properties:
+  #     Timeout: 5
+  #     Runtime: nodejs6.10
+  #     Handler: schedule.handler
+  #     CodeUri: .
