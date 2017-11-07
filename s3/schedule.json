@@ -8,7 +8,8 @@
             "title": "Consumer-Driven Contract Testing mit Spring Cloud – Schnittstellentests nicht nur für Microservices",
             "summary": "Wie stellt ein API-Consumer eigentlich sicher, dass der Provider einer API genau das liefert, was der Consumer braucht? Wie bekommt ein API-Provider eigentlich die Sicherheit, dass er genau das liefert, was der Consumer der API braucht? Consumer-Driven Contract Testing to the rescue! Automatisierte Schnittstellentests für Provider und Consumer, gratis dazu gibt’s noch Integrationstests ohne auf die Provider-Verfügbarkeit angewiesen zu sein.",
             "startsAt": "2017-11-10T09:00:00.000Z",
-            "endsAt": "2017-11-10T09:45:00.000Z"
+            "endsAt": "2017-11-10T09:45:00.000Z",
+            "lang": "de"
         },
         {
             "talkId": "2",
@@ -18,7 +19,8 @@
             "title": "How our customer setup an enterprise ready multi cloud setup with Kubernetes in AWS",
             "summary": "Learn on a real-world example how our customer setup an enterprise ready cloud environment. Our customer used a multi cloud setup based on Kubernetis deployed on AWS. Which challenges had been met to create a cloud setup which fulfill the enterprise requirements, like: Fulfill compliance rules, Integration in Incident management processes with monitoring, Logging, Security checks, Automated CI/CD Pipeline And how bootstrap such a common cloud environment for multiple project with an infrastructure as Code approach.",
             "startsAt": "2017-11-10T10:00:00.000Z",
-            "endsAt": "2017-11-10T10:45:00.000Z"
+            "endsAt": "2017-11-10T10:45:00.000Z",
+            "lang": "en"
         },
         {
             "talkId": "3",
@@ -26,9 +28,10 @@
                 "Andre Goliath"
             ],
             "title": "REST in Gut!",
-            "summary": "Machen wir uns nix vor: Gute REST-Schnittstellen zu schneiden ist nicht einfach. Klar, Daten laden mit 'GET' und alles andere einfach mit 'POST' in die Welt posaunen - kann jeder, hat aber nix mit REST zu tun. Einige klassische Fragen die gerade von REST-Einsteigern gern gestellt werden: 'Wozu braucht man eigentlich PUT?', 'Wie bilde ich Prozesse und Transaktionen ab?', 'aber 404 ist doch 'Endpunkt nicht da', wtf?' sowie der allseits beliebte Klassiker: 'Warum werden mir dauernd Verben in meinen URIs verboten?'. All diese Fragen werden wir im Talk beantworten - aber es gibt noch viel mehr im REST-Universum!",
+            "summary": "Machen wir uns nix vor: Gute REST-Schnittstellen zu schneiden ist nicht einfach. Klar, Daten laden mit GET und alles andere einfach mit POST in die Welt posaunen - kann jeder, hat aber nix mit REST zu tun. Einige klassische Fragen die gerade von REST-Einsteigern gern gestellt werden: Wozu braucht man eigentlich PUT? Wie bilde ich Prozesse und Transaktionen ab?. Aber 404 ist doch Endpunkt nicht da, wtf? Sowie der allseits beliebte Klassiker: Warum werden mir dauernd Verben in meinen URIs verboten? All diese Fragen werden wir im Talk beantworten - aber es gibt noch viel mehr im REST-Universum!",
             "startsAt": "2017-11-10T11:00:00.000Z",
-            "endsAt": "2017-11-10T11:45:00.000Z"
+            "endsAt": "2017-11-10T11:45:00.000Z",
+            "lang": "de"
         },
         {
             "talkId": "4",
@@ -38,7 +41,8 @@
             "title": "Mittagessen",
             "summary": "Super lecker und gesund.",
             "startsAt": "2017-11-10T12:00:00.000Z",
-            "endsAt": "2017-11-10T13:00:00.000Z"
+            "endsAt": "2017-11-10T13:00:00.000Z",
+            "lang": "de"
         },
         {
             "talkId": "5",
@@ -48,7 +52,8 @@
             "title": "Ergebnisse der Hacking Days",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta sunt, unde repellendus amet dolor veniam illum sit reprehenderit pariatur libero dolore placeat alias, delectus sed atque magni accusamus vel.",
             "startsAt": "2017-11-10T13:00:00.000Z",
-            "endsAt": "2017-11-10T13:20:00.000Z"
+            "endsAt": "2017-11-10T13:20:00.000Z",
+            "lang": "de"
         },
         {
             "talkId": "6",
@@ -58,7 +63,8 @@
             "title": "Concourse CI",
             "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dicta sunt, unde repellendus amet dolor veniam illum sit reprehenderit pariatur libero dolore placeat alias, delectus sed atque magni accusamus vel.",
             "startsAt": "2017-11-10T13:40:00.000Z",
-            "endsAt": "2017-11-10T14:00:00.000Z"
+            "endsAt": "2017-11-10T14:00:00.000Z",
+            "lang": "de"
         },
         {
             "talkId": "7",
@@ -66,9 +72,10 @@
                 "David Schmitz"
             ],
             "title": "The FaaS and the Furious",
-            "summary": "Serverless Computing ist der nächste logische Schritt, um Anwendungen in die Cloud zu bringen. Im Kern von Amazons Serverless Computing Angebots liegt AWS Lambda. AWS Lambda ist unter anderem durch den Sprachassistenten Alex populär geworden, wird aber in unterschiedlichen Bereichen für innovative Produkte verwendet. Dieser Vortrag stellt Serverless Computing anhand eines Amazon Alexa Skills vor, der das Konferenzprogramm der Javaland 2018 als Sprachassistent anbietet. Wir schauen im Rahmen des Beispiels auf die architekturellen und infrastrukturellen Herausforderungen diese Event-Driven Ansatzes und lernen, wo Serverless Computing sinnvoll ist und wo andere Ansätze besser geeignet sein können. Schliesslich werfen wir noch einen kurzen Blick auf Alternativen zu AWS Lambda, wie z.B. Fission und Azure Functions und bewerten die Vor- und Nachteile.",
+            "summary": "Serverless Computing ist der nächste logische Schritt, um Anwendungen in die Cloud zu bringen. Im Kern von Amazons Serverless Computing Angebots liegt AWS Lambda. AWS Lambda ist unter anderem durch den Sprachassistenten Alexa populär geworden, wird aber in unterschiedlichen Bereichen für innovative Produkte verwendet. Dieser Vortrag stellt Serverless Computing anhand eines Amazon Alexa Skills vor, der das Konferenzprogramm der Devcon 2017 als Sprachassistent anbietet. Wir schauen im Rahmen des Beispiels auf die architekturellen und infrastrukturellen Herausforderungen diese Event-Driven Ansatzes und lernen, wo Serverless Computing sinnvoll ist und wo andere Ansätze besser geeignet sein können. Schliesslich werfen wir noch einen kurzen Blick auf Alternativen zu AWS Lambda und bewerten die Vor- und Nachteile.",
             "startsAt": "2017-11-10T14:00:00.000Z",
-            "endsAt": "2017-11-10T14:45:00.000Z"
+            "endsAt": "2017-11-10T14:45:00.000Z",
+            "lang": "de"
         },
         {
             "talkId": "8",
@@ -78,7 +85,8 @@
             "title": "Messaging minus Middleware – Multicast macht es möglich",
             "summary": "Konventionelle Middleware setzt immer noch auf zentrale Server: Queue Manager sind Flaschenhälse, ausfallsicher nur mit komplizierter Konfiguration und am Ende zu langsam. Um sie schnell zu machen, müssen nach und nach alle Sicherungen ausgebaut werden: Persistenz, Empfangsbestätigung und Transaktionen fallen nach und nach der Performance zum Opfer. Das muss nicht sein. Ich zeige eine leichtgewichtige Middleware, die auf IP Multicast basiert, keine zentralen Komponenten oder Services benötigt, mit minimaler Konfiguration auskommt, große Datenmengen mit niedriger Latenz durch die Gegend schaufeln kann und dabei Transportsicherung und Fehlerkorrektur bietet. Und natürlich in Clojure programmiert.",
             "startsAt": "2017-11-10T15:30:00.000Z",
-            "endsAt": "2017-11-10T16:15:00.000Z"
+            "endsAt": "2017-11-10T16:15:00.000Z",
+            "lang": "de"
         },
         {
             "talkId": "9",
@@ -88,7 +96,8 @@
             "title": "B2B Process Management über die Bitcoin Blockchain",
             "summary": "Ich möchte ein Beispiel geben für eine alternative Verwendung der Bitcoin Blockchain. Die Bitcoin Blockchain (und ihre Forks) kann auch als verteilter und unabhängiger Datastorage für Applikationen verwendet werden. Dies bietet sich an wenn der Bedarf für Sicherheit und Qualität an der Blockchain im Vergleich zu den Software-Features überwiegt. Die Qualität von Blockchains wurde im Ansatz bisher nur für die Bitcoin Blockchain untersucht. Dabei möchte ich auf die verschiedenen Möglichkeiten und Herausforderungen die sich Ergeben sowie auf andere Lessons Learned eingehen. Da es sich hier um die „erste“ Blockchain handelt sind diese Erfahrungen auch für die Nachfolger-Blockchains wertvoll.",
             "startsAt": "2017-11-10T16:30:00.000Z",
-            "endsAt": "2017-11-10T17:15:00.000Z"
+            "endsAt": "2017-11-10T17:15:00.000Z",
+            "lang": "de"
         }
 
 
